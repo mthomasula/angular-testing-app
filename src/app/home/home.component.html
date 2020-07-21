@@ -1,0 +1,25 @@
+
+<h1 style="font-family: Arial, Helvetica, sans-serif">Home page</h1>
+
+
+<div>
+    <input 
+    type="text"
+    [(ngModel)]="name" >
+    
+    <p>{{ name }}</p>
+    
+   
+   
+</div>
+
+
+<div>
+    <input 
+    type="text"
+    (input)="onUpdateName($event)">
+
+    <p>{{ name }}</p>
+
+</div>
+

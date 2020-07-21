@@ -1,0 +1,32 @@
+
+
+<button [disabled] = 'allowDog'>Make Doggies</button>
+
+
+
+<div>
+    <input 
+    type="text"
+    #catName
+    >
+   
+    <input 
+    type="text"
+    #catColor
+    >
+
+    <button (click) = "addNewCat()">Add new cat</button>
+</div>
+
+
+<p>{{ bee }}</p>
+
+
+
+<ul *ngFor =" let cat of cats">
+    <li appSetColor [defaultColor]="'purple'" [highlightColor]="'blue'">
+            {{ cat.name }}
+            {{ cat.color }}
+    </li>
+</ul>
+
